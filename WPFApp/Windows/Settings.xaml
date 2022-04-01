@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFApp.Windows.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp.Windows"
+        xmlns:lang="clr-namespace:WPFApp.Properties"
+        mc:Ignorable="d"
+        Title="Settings" Height="350" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="Language" Grid.Column="1"  HorizontalAlignment="Right" Margin="36,0,0,0" Grid.Row="1" VerticalAlignment="Center" Content="{x:Static lang:Resources.Language}"/>
+        <RadioButton x:Name="rbtnEnglish" GroupName="Language" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Center" Content="{x:Static lang:Resources.rbtnEnglishLanguage}"/>
+        <RadioButton x:Name="rbtnCroatian" GroupName="Language" Grid.Column="3" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Center" Content="{x:Static lang:Resources.rbtnCroatianLanguage}"/>
+
+        <Label x:Name="Championship" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Center" Content="{x:Static lang:Resources.Championship}"/>
+        <RadioButton x:Name="rbtnFemale" GroupName="Gender" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Center" Content="{x:Static lang:Resources.rbtnFemale}"/>
+        <RadioButton x:Name="rbtnMale" GroupName="Gender" Grid.Column="3" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Center" Content="{x:Static lang:Resources.rbtnMale}"/>
+
+        <Button x:Name="btnAccept" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="48" Width="96" Background="#FF14D423" Content="{x:Static lang:Resources.btnAccept}" Click="BtnAccept_Click" IsDefault="True" />
+        <Button x:Name="btnCancle" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="48" Width="96" Background="#FFF91313" Content="{x:Static lang:Resources.btnCancel}" Click="BtnCancel_Click" IsCancel="True"/>
+
+
+    </Grid>
+</Window>

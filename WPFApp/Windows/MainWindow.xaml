@@ -1,0 +1,59 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        xmlns:lang="clr-namespace:WPFApp.Properties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1000">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ComboBox x:Name="ddlCountries" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="1" Width="180" Height="20" SelectionChanged="DdlCountries_SelectionChanged" Margin="10"/>
+
+        <ComboBox x:Name="ddlVersusCountries" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="6" Width="180" Height="20" SelectionChanged="DdlVersusCountries_SelectionChanged" Margin="10"/>
+
+        <Label x:Name="lblResult" Grid.ColumnSpan="2"  Grid.Row="0" Grid.Column="4" Width="100" FontSize="30" Content="00:00" Margin="30 0 0 0"/>
+
+        <Button x:Name="btnInfoCountry" Grid.Row="0" Grid.Column="3" Width="40" Height="20" Content="{x:Static lang:Resources.btnInfo}" Click="BtnInfoCountry_Click"/>
+
+        <Button x:Name="btnInfoVersusCountry" Grid.Row="0" Grid.Column="8" Width="40" Height="20" Content="{x:Static lang:Resources.btnInfo}" Click="BtnInfoVersusCountry_Click"/>
+
+
+        <Button x:Name="btnSettings" Grid.Row="0" Grid.Column="9" Width="40" Height="40" Click="BtnSettings_Click">
+            <Image x:Name="imageSettings"/>
+        </Button>
+
+        <Image x:Name="FootballField" Stretch="Fill" Grid.Row="1" Grid.ColumnSpan="8" Grid.Column="1" Source="/Materials/FootballPitch.png"  Margin="10,10,10,21"/>
+
+        <Image x:Name="loadingCountry" Grid.Row="2" Grid.ColumnSpan="10" Width="200"/>
+
+        <StackPanel x:Name="hGoalie" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <StackPanel x:Name="hDefender" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <StackPanel x:Name="hMidField" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <StackPanel x:Name="hForward" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <StackPanel x:Name="aGoalie" Grid.Row="1" Grid.Column="8" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <StackPanel x:Name="aDefender" Grid.Row="1" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <StackPanel x:Name="aMidField" Grid.Row="1" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <StackPanel x:Name="aForward" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+    </Grid>
+</Window>

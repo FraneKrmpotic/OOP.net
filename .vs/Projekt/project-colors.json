@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "937dbb9e-4f8b-42ef-b520-45daa4d4cd36": {
+      "ProjectGuid": "937dbb9e-4f8b-42ef-b520-45daa4d4cd36",
+      "DisplayName": "DataLayer",
+      "ColorIndex": 0
+    },
+    "5e2b51cc-712a-4da5-a1d4-f94a053eff67": {
+      "ProjectGuid": "5e2b51cc-712a-4da5-a1d4-f94a053eff67",
+      "DisplayName": "DataLazer",
+      "ColorIndex": 1
+    },
+    "4766c29c-84fc-42b7-a620-88d6ae2b0e7f": {
+      "ProjectGuid": "4766c29c-84fc-42b7-a620-88d6ae2b0e7f",
+      "DisplayName": "DataLayer",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "0c663058-b02b-46b6-b292-a4bbe46f090e": {
+      "ProjectGuid": "0c663058-b02b-46b6-b292-a4bbe46f090e",
+      "DisplayName": "WFApp",
+      "ColorIndex": 3
+    },
+    "6766e2f6-07bd-46a4-880f-558cbd646747": {
+      "ProjectGuid": "6766e2f6-07bd-46a4-880f-558cbd646747",
+      "DisplayName": "WPFApp",
+      "ColorIndex": 4
+    },
+    "552cf13c-5e47-484b-9079-699f7f7e90b0": {
+      "ProjectGuid": "552cf13c-5e47-484b-9079-699f7f7e90b0",
+      "DisplayName": "WPFApp",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

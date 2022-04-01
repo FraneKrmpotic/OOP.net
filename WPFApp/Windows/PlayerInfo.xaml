@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFApp.Windows.PlayerInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lang="clr-namespace:WPFApp.Properties"
+        xmlns:local="clr-namespace:WPFApp.Windows"
+        mc:Ignorable="d"
+        Title="PlayerInfo" Height="300" Width="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="PlayerImage" Grid.Row="0" Grid.ColumnSpan="2" Margin="5" Height="100" HorizontalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Content="{x:Static lang:Resources.lblName}"/>
+        <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" x:Name="lblNameData" Content="data"/>
+        <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" Content="{x:Static lang:Resources.lblShirtNumber}"/>
+        <Label Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" x:Name="lblShirtNumberData" Content="data"/>
+        <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" Content="{x:Static lang:Resources.lblPosition}"/>
+        <Label Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" x:Name="lblPositionData" Content="data"/>
+        <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" Content="{x:Static lang:Resources.lblCaptain}"/>
+        <Label Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" x:Name="lblCaptainData" Content="data"/>
+        <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" Content="{x:Static lang:Resources.lblScoredGoals}"/>
+        <Label Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" x:Name="lblScoredGoalsData" Content="data"/>
+        <Label Grid.Row="6" Grid.Column="0" HorizontalAlignment="Center" Content="{x:Static lang:Resources.lblYellowCards}"/>
+        <Label Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" x:Name="lblYellowCardsData" Content="data"/>
+
+    </Grid>
+</Window>

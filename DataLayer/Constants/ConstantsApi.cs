@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer.Constants
+{
+    public static class ConstantsApi
+    {
+        //Lokacije jasona u file-ovima
+        public static string FemaleGroupResultsLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/women_group_results.json");
+        public static string FemaleMatchesLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/women_matches.json");
+        public static string FemaleResultsLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/women_results.json");
+        public static string FemaleTeamsLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/women_teams.json");
+
+        public static string MaleGroupResultsLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/men_group_results.json");
+        public static string MaleMatchesLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/men_matches.json");
+        public static string MaleResultsLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/men_results.json");
+        public static string MaleTeamsLocation = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Json/men_teams.json");
+
+        //Jasoni s weba
+        public const string FemaleTeamsWebLocation = "http://worldcup.sfg.io/teams/results";
+        public const string FemaleMatchesWebLocation = "http://worldcup.sfg.io/matches";
+        public const string FemaleDetailedMatchesWebLocation = "https://worldcup.sfg.io/matches/country?fifa_code=ENG";
+
+        public const string MaleTeamsWebLocation = "http://world-cup-json-2018.herokuapp.com/teams/results";
+        public const string MaleMatchesWebLocation = "http://world-cup-json-2018.herokuapp.com/matches";
+        public const string MaleDetailedMatchesWebLocation = "http://world-cup-json-2018.herokuapp.com/matches/country?fifa_code=ENG";
+
+    }
+}
